@@ -601,6 +601,7 @@ header div p {
   font-weight: 300;
   float: right;
   font-size: 24px;
+  font-size: 1.5rem;
   padding: 0;
   margin: 0 0 100px;
 }
@@ -631,8 +632,11 @@ section {
   margin: 0 auto;
   max-width: 730px;
   padding: 40px 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* line 19, ../sass/layout/sections/_about.scss */
+/* line 22, ../sass/layout/sections/_about.scss */
 .about .white-box h1 {
   color: #444444;
   font-family: "Roboto Slab", serif;
@@ -643,10 +647,23 @@ section {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 29, ../sass/layout/sections/_about.scss */
+/* line 32, ../sass/layout/sections/_about.scss */
 .about .white-box p {
   font-family: "Roboto", serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 300;
+}
+/* line 38, ../sass/layout/sections/_about.scss */
+.about .white-box .button {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-decoration: none;
+  border: 2px solid #000000;
+  padding: 16px 37px;
+  color: #222222;
+  text-transform: uppercase;
+  float: left;
 }
