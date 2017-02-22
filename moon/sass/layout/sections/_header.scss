@@ -1,0 +1,25 @@
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/top.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    div {
+        width: 1110px;
+        margin: 0 auto;
+
+        p {
+            max-width: 550px;
+            text-align: right;
+            font-family: roboto;
+            font-weight: 300;
+            float: right;
+            font-size: 24px;
+            padding: 0;
+            margin: 0 0 100px;
+        }
+    }
+}
