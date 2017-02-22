@@ -501,6 +501,7 @@ nav {
   width: 100%;
   text-align: center;
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5em;
   height: 180px;
   font-family: 'Roboto', sans-serif;
@@ -534,14 +535,17 @@ nav ul li:hover {
 /* line 35, ../sass/modules/_nav.scss */
 nav ul li.reg {
   font-size: 10px;
+  font-size: 0.625rem;
 }
 /* line 41, ../sass/modules/_nav.scss */
 nav ul li.title {
   font-size: 24px;
+  font-size: 1.5rem;
 }
 /* line 48, ../sass/modules/_nav.scss */
 nav h1 {
   font-size: 24px;
+  font-size: 1.5rem;
   color: #222222;
   font-weight: 300;
   z-index: 1;
@@ -601,7 +605,48 @@ header div p {
   margin: 0 0 100px;
 }
 
-/* line 1, ../sass/layout/sections/_section_.scss */
+/* line 1, ../sass/layout/sections/_sectionglobal.scss */
 section {
-  height: 100vh;
+  background-color: #efeee9;
+  float: left;
+  width: 100%;
+}
+
+/* line 1, ../sass/layout/sections/_about.scss */
+.about {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* line 6, ../sass/layout/sections/_about.scss */
+.about .white-box {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 1110px;
+  margin: 180px auto;
+}
+/* line 13, ../sass/layout/sections/_about.scss */
+.about .white-box .wb-content {
+  margin: 0 auto;
+  max-width: 730px;
+  padding: 40px 170px;
+}
+/* line 19, ../sass/layout/sections/_about.scss */
+.about .white-box h1 {
+  color: #444444;
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 0 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 29, ../sass/layout/sections/_about.scss */
+.about .white-box p {
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
 }

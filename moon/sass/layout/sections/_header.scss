@@ -17,7 +17,7 @@ header {
             font-family: roboto;
             font-weight: 300;
             float: right;
-            font-size: 24px;
+            @include font-size(24px);
             padding: 0;
             margin: 0 0 100px;
         }
