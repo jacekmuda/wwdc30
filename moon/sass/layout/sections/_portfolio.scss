@@ -1,0 +1,104 @@
+.portfolio {
+    width: 100%;
+
+    ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li {
+            width: 33.3%;
+            height: 420px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                width: 100%;
+                color: white;
+                z-index: 1;
+                text-align: center;
+                font-size: 24px;
+                font-family: roboto;
+                text-decoration: none;
+                opacity: 0;
+                position: absolute;
+                @include regease;
+            }
+
+            div::before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include regease;
+            }
+
+            div::after {
+                width: 100%;
+                height: 100%;
+                content: "";
+                display: block;
+                opacity: 0;
+                background: $black;
+                z-index: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include regease;
+            }
+        }
+
+        .item1 div:before {
+            background: url('../images/1.jpg');
+        }
+
+        .item2 div:before {
+            background: url('../images/2.jpg');
+        }
+
+        .item3 div:before {
+            background: url('../images/3.jpg');
+        }
+
+        .item4 div:before {
+            background: url('../images/4.jpg');
+        }
+
+        .item5 div:before {
+            background: url('../images/5.jpg');
+        }
+
+        .item6 div:before {
+            background: url('../images/6.jpg');
+        }
+
+        .portfoli div:before {
+            background-size: cover;
+            background-repeat: no-repeat;
+            -moz-transform: scale(1,1);
+            -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+        }
+
+        .portfoli:hover div:before {
+            -moz-transform: scale(1.2,1.2);
+            -webkit-transform: scale(1.2,1.2);
+            transform: scale(1.2,1.2);
+        }
+
+        .portfoli:hover div:after {
+            @include regease;
+            opacity: 0.7;
+        }
+        .portfoli:hover a {
+        opacity: 1;
+        }
+    }
+}

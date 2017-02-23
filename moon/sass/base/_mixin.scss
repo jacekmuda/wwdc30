@@ -36,4 +36,11 @@ padding: 16px 37px;
 color: $dark2;
 text-transform: uppercase;
 float: left;
+margin: 50px auto;
+@include regease;
+cursor: pointer;
+&:hover {
+  color: #efeee9;
+  background: $black;
+}
 }

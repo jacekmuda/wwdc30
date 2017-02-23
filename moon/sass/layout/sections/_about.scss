@@ -27,12 +27,15 @@
             padding: 0 50px;
             text-transform: uppercase;
             text-align: center;
+            margin: 55px auto;
         }
 
         p {
             font-family: $roboto;
             @include font-size(20px);
             font-weight: 300;
+            line-height: 1.4;
+            margin: 15px 0;
         }
 
         .button {
