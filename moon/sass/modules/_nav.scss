@@ -5,7 +5,7 @@ nav {
     @include font-size(14px);
     line-height: 1.5em;
     height: 180px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     @include regease;
     display: flex;
     justify-content: center;

@@ -1,0 +1,11 @@
+.quote {
+  p {
+    max-width: 760px;
+    text-align: center;
+    padding:200px 20px;
+    margin: 0 auto;
+    font-family: $roboto;
+    @include font-size(36px);
+    font-weight: 100;
+  }
+}

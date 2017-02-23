@@ -504,7 +504,7 @@ nav {
   font-size: 0.875rem;
   line-height: 1.5em;
   height: 180px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", serif;
   transition: all 0.5s ease;
   display: flex;
   justify-content: center;
@@ -785,4 +785,16 @@ section {
 /* line 100, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover a {
   opacity: 1;
+}
+
+/* line 2, ../sass/layout/sections/_quote.scss */
+.quote p {
+  max-width: 760px;
+  text-align: center;
+  padding: 200px 0;
+  margin: 0 auto;
+  font-family: "Roboto", serif;
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: 100;
 }
