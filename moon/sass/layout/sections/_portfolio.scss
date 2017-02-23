@@ -19,14 +19,17 @@
             a {
                 width: 100%;
                 color: white;
-                z-index: 1;
+                z-index: 2;
                 text-align: center;
-                font-size: 24px;
-                font-family: roboto;
+                @include font-size(24px);
+                font-family: $roboto;
+                font-weight: 100;
                 text-decoration: none;
+                text-transform: uppercase;
                 opacity: 0;
                 position: absolute;
                 @include regease;
+
             }
 
             div::before {
@@ -51,6 +54,22 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                @include regease;
+            }
+
+            &:after {
+                content: "";
+                max-width: 100%;
+                border: 1px solid white;
+                z-index: 1;
+                max-height: 100%;
+                opacity: 0.0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 10;
+                bottom: 0;
+                right: 0;
                 @include regease;
             }
         }
@@ -86,7 +105,9 @@
             -webkit-transform: scale(1,1);
             transform: scale(1,1);
         }
-
+        .portfoli:hover:after {
+          opacity: 0.2;
+        }
         .portfoli:hover div:before {
             -moz-transform: scale(1.2,1.2);
             -webkit-transform: scale(1.2,1.2);
@@ -97,8 +118,9 @@
             @include regease;
             opacity: 0.7;
         }
+
         .portfoli:hover a {
-        opacity: 1;
+            opacity: 1;
         }
     }
 }

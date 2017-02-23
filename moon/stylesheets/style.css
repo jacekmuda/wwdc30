@@ -705,16 +705,19 @@ section {
 .portfolio ul li a {
   width: 100%;
   color: white;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   font-size: 24px;
-  font-family: roboto;
+  font-size: 1.5rem;
+  font-family: "Roboto", serif;
+  font-weight: 100;
   text-decoration: none;
+  text-transform: uppercase;
   opacity: 0;
   position: absolute;
   transition: all 0.5s ease;
 }
-/* line 32, ../sass/layout/sections/_portfolio.scss */
+/* line 35, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul li div::before {
   width: 100%;
   height: 100%;
@@ -725,7 +728,7 @@ section {
   left: 0;
   transition: all 0.5s ease;
 }
-/* line 43, ../sass/layout/sections/_portfolio.scss */
+/* line 46, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul li div::after {
   width: 100%;
   height: 100%;
@@ -739,31 +742,47 @@ section {
   left: 0;
   transition: all 0.5s ease;
 }
-/* line 58, ../sass/layout/sections/_portfolio.scss */
+/* line 60, ../sass/layout/sections/_portfolio.scss */
+.portfolio ul li:after {
+  content: "";
+  max-width: 100%;
+  border: 1px solid white;
+  z-index: 1;
+  max-height: 100%;
+  opacity: 0.0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+/* line 77, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item1 div:before {
   background: url("../images/1.jpg");
 }
-/* line 62, ../sass/layout/sections/_portfolio.scss */
+/* line 81, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item2 div:before {
   background: url("../images/2.jpg");
 }
-/* line 66, ../sass/layout/sections/_portfolio.scss */
+/* line 85, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item3 div:before {
   background: url("../images/3.jpg");
 }
-/* line 70, ../sass/layout/sections/_portfolio.scss */
+/* line 89, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item4 div:before {
   background: url("../images/4.jpg");
 }
-/* line 74, ../sass/layout/sections/_portfolio.scss */
+/* line 93, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item5 div:before {
   background: url("../images/5.jpg");
 }
-/* line 78, ../sass/layout/sections/_portfolio.scss */
+/* line 97, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item6 div:before {
   background: url("../images/6.jpg");
 }
-/* line 82, ../sass/layout/sections/_portfolio.scss */
+/* line 101, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli div:before {
   background-size: cover;
   background-repeat: no-repeat;
@@ -771,18 +790,22 @@ section {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 90, ../sass/layout/sections/_portfolio.scss */
+/* line 108, ../sass/layout/sections/_portfolio.scss */
+.portfolio ul .portfoli:hover:after {
+  opacity: 0.2;
+}
+/* line 111, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover div:before {
   -moz-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
-/* line 96, ../sass/layout/sections/_portfolio.scss */
+/* line 117, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover div:after {
   transition: all 0.5s ease;
   opacity: 0.7;
 }
-/* line 100, ../sass/layout/sections/_portfolio.scss */
+/* line 122, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover a {
   opacity: 1;
 }
@@ -791,10 +814,59 @@ section {
 .quote p {
   max-width: 760px;
   text-align: center;
-  padding: 200px 0;
+  padding: 200px 20px;
   margin: 0 auto;
   font-family: "Roboto", serif;
   font-size: 36px;
   font-size: 2.25rem;
   font-weight: 100;
+}
+
+/* line 9, ../sass/style.scss */
+.product {
+  height: 720px;
+}
+/* line 12, ../sass/style.scss */
+.product .lp,
+.product .rp {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+/* line 19, ../sass/style.scss */
+.product .lp {
+  background: url("../images/blue.jpg");
+  background-size: cover;
+}
+/* line 24, ../sass/style.scss */
+.product .rp {
+  background: white;
+}
+/* line 27, ../sass/style.scss */
+.product .rp .rp-content {
+  max-width: 300px;
+  padding: 113px 0 160px 130px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  color: #290a59;
+}
+/* line 35, ../sass/style.scss */
+.product .rp .rp-content h3 {
+  margin: 0;
+  margin-top: 47px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  letter-spacing: 0.42em;
+  padding: 0;
+}
+/* line 46, ../sass/style.scss */
+.product .rp .rp-content p {
+  padding: 0;
+  margin: 3px 0 10px;
+  line-height: 1.6;
 }
