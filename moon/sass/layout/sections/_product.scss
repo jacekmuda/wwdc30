@@ -1,1 +1,45 @@
+.product {
+    height: 720px;
 
+    .lp,
+    .rp {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    .lp {
+        background: url('../images/blue.jpg');
+        background-size: cover;
+    }
+
+    .rp {
+        background: white;
+
+        .rp-content {
+            max-width: 300px;
+            padding: 113px 0 160px 130px;
+            @include font-size(14px);
+            font-family: $roboto;
+            font-weight: 100;
+            color: $deepblue;
+
+            h3 {
+                margin: 0;
+                margin-top: 47px;
+                @include font-size(14px);
+                text-transform: uppercase;
+                font-family: $roboto;
+                font-weight: 100;
+                letter-spacing: 0.42em;
+                padding: 0;
+            }
+
+            p {
+                padding: 0;
+                margin: 3px 0 10px;
+                line-height: 1.6;
+            }
+        }
+    }
+}

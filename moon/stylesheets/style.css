@@ -495,6 +495,11 @@ ul li {
   list-style: none;
 }
 
+/* line 5, ../sass/base/_typography.scss */
+html {
+  font-family: "Roboto", serif;
+}
+
 /* line 1, ../sass/modules/_nav.scss */
 nav {
   position: fixed;
@@ -522,28 +527,30 @@ nav ul {
 /* line 22, ../sass/modules/_nav.scss */
 nav ul li {
   float: left;
-  padding: 0 30px;
+  padding: 0px 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #222222;
+  margin: -12px 0 0 0;
+  letter-spacing: 0.415em;
   transition: all 0.5s ease;
 }
-/* line 30, ../sass/modules/_nav.scss */
+/* line 32, ../sass/modules/_nav.scss */
 nav ul li:hover {
   color: #4eaeff;
   cursor: pointer;
 }
-/* line 36, ../sass/modules/_nav.scss */
+/* line 38, ../sass/modules/_nav.scss */
 nav ul li.reg {
   font-size: 10px;
   font-size: 0.625rem;
 }
-/* line 42, ../sass/modules/_nav.scss */
+/* line 44, ../sass/modules/_nav.scss */
 nav ul li.title {
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 49, ../sass/modules/_nav.scss */
+/* line 51, ../sass/modules/_nav.scss */
 nav h1 {
   font-size: 24px;
   font-size: 1.5rem;
@@ -554,7 +561,7 @@ nav h1 {
   padding: 0;
   letter-spacing: 10px;
 }
-/* line 59, ../sass/modules/_nav.scss */
+/* line 61, ../sass/modules/_nav.scss */
 nav::after {
   content: "";
   display: block;
@@ -569,14 +576,18 @@ nav::after {
   transition: all 0.5s ease;
 }
 
-/* line 73, ../sass/modules/_nav.scss */
+/* line 75, ../sass/modules/_nav.scss */
 nav.sticky {
   height: 55px;
 }
-/* line 75, ../sass/modules/_nav.scss */
+/* line 77, ../sass/modules/_nav.scss */
 nav.sticky::after {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+/* line 80, ../sass/modules/_nav.scss */
+nav.sticky ul li {
+  margin: 0;
 }
 
 /* line 1, ../sass/layout/sections/_header.scss */
@@ -822,27 +833,27 @@ section {
   font-weight: 100;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 1, ../sass/layout/sections/_product.scss */
 .product {
   height: 720px;
 }
-/* line 12, ../sass/style.scss */
+/* line 4, ../sass/layout/sections/_product.scss */
 .product .lp,
 .product .rp {
   width: 50%;
   height: 100%;
   float: left;
 }
-/* line 19, ../sass/style.scss */
+/* line 11, ../sass/layout/sections/_product.scss */
 .product .lp {
   background: url("../images/blue.jpg");
   background-size: cover;
 }
-/* line 24, ../sass/style.scss */
+/* line 16, ../sass/layout/sections/_product.scss */
 .product .rp {
   background: white;
 }
-/* line 27, ../sass/style.scss */
+/* line 19, ../sass/layout/sections/_product.scss */
 .product .rp .rp-content {
   max-width: 300px;
   padding: 113px 0 160px 130px;
@@ -852,7 +863,7 @@ section {
   font-weight: 100;
   color: #290a59;
 }
-/* line 35, ../sass/style.scss */
+/* line 27, ../sass/layout/sections/_product.scss */
 .product .rp .rp-content h3 {
   margin: 0;
   margin-top: 47px;
@@ -864,9 +875,66 @@ section {
   letter-spacing: 0.42em;
   padding: 0;
 }
-/* line 46, ../sass/style.scss */
+/* line 38, ../sass/layout/sections/_product.scss */
 .product .rp .rp-content p {
   padding: 0;
   margin: 3px 0 10px;
   line-height: 1.6;
+}
+
+/* line 2, ../sass/layout/sections/_articles.scss */
+.articles .pans {
+  max-width: 1110px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+/* line 8, ../sass/layout/sections/_articles.scss */
+.articles .pans .panel {
+  max-width: 350px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 14, ../sass/layout/sections/_articles.scss */
+.articles .pans .panel h3, .articles .pans .panel p, .articles .pans .panel a {
+  padding: 0 50px;
+}
+/* line 17, ../sass/layout/sections/_articles.scss */
+.articles .pans .panel h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin: 35px 0;
+  font-weight: 700;
+}
+/* line 22, ../sass/layout/sections/_articles.scss */
+.articles .pans .panel p {
+  font-weight: 300;
+  margin: 0;
+}
+/* line 26, ../sass/layout/sections/_articles.scss */
+.articles .pans .panel a {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-decoration: none;
+  border: 2px solid #000000;
+  padding: 16px 37px;
+  color: #222222;
+  text-transform: uppercase;
+  float: left;
+  margin: 50px auto;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 12px 33px;
+  margin: 30px auto;
+}
+/* line 42, ../sass/base/_mixin.scss */
+.articles .pans .panel a:hover {
+  color: #efeee9;
+  background: #000000;
 }

@@ -21,10 +21,12 @@ nav {
 
         li {
             float: left;
-            padding: 0 30px;
+            padding: 0px 20px;
             text-decoration: none;
             text-transform: uppercase;
             color: $dark2;
+            margin: -12px 0 0 0;
+            letter-spacing: 0.415em;
             @include regease;
 
             &:hover {
@@ -74,5 +76,8 @@ nav.sticky {
     height: 55px;
     &::after {
         @include opacity(1);
+    }
+    ul li {
+      margin: 0;
     }
 }
