@@ -728,7 +728,7 @@ section {
   position: absolute;
   transition: all 0.5s ease;
 }
-/* line 35, ../sass/layout/sections/_portfolio.scss */
+/* line 34, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul li div::before {
   width: 100%;
   height: 100%;
@@ -739,7 +739,7 @@ section {
   left: 0;
   transition: all 0.5s ease;
 }
-/* line 46, ../sass/layout/sections/_portfolio.scss */
+/* line 45, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul li div::after {
   width: 100%;
   height: 100%;
@@ -753,7 +753,7 @@ section {
   left: 0;
   transition: all 0.5s ease;
 }
-/* line 60, ../sass/layout/sections/_portfolio.scss */
+/* line 59, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul li:after {
   content: "";
   max-width: 100%;
@@ -769,31 +769,31 @@ section {
   right: 0;
   transition: all 0.5s ease;
 }
-/* line 77, ../sass/layout/sections/_portfolio.scss */
+/* line 76, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item1 div:before {
   background: url("../images/1.jpg");
 }
-/* line 81, ../sass/layout/sections/_portfolio.scss */
+/* line 80, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item2 div:before {
   background: url("../images/2.jpg");
 }
-/* line 85, ../sass/layout/sections/_portfolio.scss */
+/* line 84, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item3 div:before {
   background: url("../images/3.jpg");
 }
-/* line 89, ../sass/layout/sections/_portfolio.scss */
+/* line 88, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item4 div:before {
   background: url("../images/4.jpg");
 }
-/* line 93, ../sass/layout/sections/_portfolio.scss */
+/* line 92, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item5 div:before {
   background: url("../images/5.jpg");
 }
-/* line 97, ../sass/layout/sections/_portfolio.scss */
+/* line 96, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .item6 div:before {
   background: url("../images/6.jpg");
 }
-/* line 101, ../sass/layout/sections/_portfolio.scss */
+/* line 100, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli div:before {
   background-size: cover;
   background-repeat: no-repeat;
@@ -805,18 +805,18 @@ section {
 .portfolio ul .portfoli:hover:after {
   opacity: 0.2;
 }
-/* line 111, ../sass/layout/sections/_portfolio.scss */
+/* line 112, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover div:before {
   -moz-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
-/* line 117, ../sass/layout/sections/_portfolio.scss */
+/* line 118, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover div:after {
   transition: all 0.5s ease;
   opacity: 0.7;
 }
-/* line 122, ../sass/layout/sections/_portfolio.scss */
+/* line 123, ../sass/layout/sections/_portfolio.scss */
 .portfolio ul .portfoli:hover a {
   opacity: 1;
 }
@@ -865,8 +865,7 @@ section {
 }
 /* line 27, ../sass/layout/sections/_product.scss */
 .product .rp .rp-content h3 {
-  margin: 0;
-  margin-top: 47px;
+  margin: 47px 0 0;
   font-size: 14px;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -875,7 +874,7 @@ section {
   letter-spacing: 0.42em;
   padding: 0;
 }
-/* line 38, ../sass/layout/sections/_product.scss */
+/* line 37, ../sass/layout/sections/_product.scss */
 .product .rp .rp-content p {
   padding: 0;
   margin: 3px 0 10px;
@@ -890,7 +889,7 @@ section {
   justify-content: space-between;
   text-align: center;
 }
-/* line 8, ../sass/layout/sections/_articles.scss */
+/* line 9, ../sass/layout/sections/_articles.scss */
 .articles .pans .panel {
   max-width: 350px;
   background: #fff;
@@ -898,23 +897,25 @@ section {
   flex-direction: column;
   align-items: center;
 }
-/* line 14, ../sass/layout/sections/_articles.scss */
-.articles .pans .panel h3, .articles .pans .panel p, .articles .pans .panel a {
+/* line 16, ../sass/layout/sections/_articles.scss */
+.articles .pans .panel a,
+.articles .pans .panel h3,
+.articles .pans .panel p {
   padding: 0 50px;
 }
-/* line 17, ../sass/layout/sections/_articles.scss */
+/* line 22, ../sass/layout/sections/_articles.scss */
 .articles .pans .panel h3 {
   font-size: 18px;
   font-size: 1.125rem;
   margin: 35px 0;
   font-weight: 700;
 }
-/* line 22, ../sass/layout/sections/_articles.scss */
+/* line 28, ../sass/layout/sections/_articles.scss */
 .articles .pans .panel p {
   font-weight: 300;
   margin: 0;
 }
-/* line 26, ../sass/layout/sections/_articles.scss */
+/* line 33, ../sass/layout/sections/_articles.scss */
 .articles .pans .panel a {
   font-family: "Roboto", serif;
   font-weight: 900;
@@ -937,4 +938,97 @@ section {
 .articles .pans .panel a:hover {
   color: #efeee9;
   background: #000000;
+}
+
+/* line 1, ../sass/layout/sections/_contact.scss */
+.contact {
+  background: #353535;
+}
+/* line 4, ../sass/layout/sections/_contact.scss */
+.contact .conconten {
+  max-width: 1110px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 0;
+}
+/* line 12, ../sass/layout/sections/_contact.scss */
+.contact .conconten .con {
+  width: 50%;
+  float: left;
+}
+/* line 17, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cl {
+  padding: 100px 0 0;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1rem;
+}
+/* line 22, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cl p {
+  max-width: 350px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+}
+/* line 29, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cl span {
+  width: 100%;
+  float: left;
+  line-height: 1.5em;
+  padding-top: 24px;
+  font-weight: 400;
+}
+/* line 37, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cl span span {
+  padding-top: 0;
+}
+/* line 41, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cl .bolder {
+  font-weight: 700;
+}
+/* line 47, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cr #map {
+  height: 100%;
+  max-height: 460px;
+}
+/* line 52, ../sass/layout/sections/_contact.scss */
+.contact .conconten .cr body,
+.contact .conconten .cr html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/layout/sections/_footer.scss */
+footer {
+  color: #353535;
+  height: 125px;
+  float: left;
+  background: #fff;
+  height: 125px;
+  width: 100%;
+  float: left;
+}
+/* line 10, ../sass/layout/sections/_footer.scss */
+footer .focont {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+/* line 19, ../sass/layout/sections/_footer.scss */
+footer .focont .socials {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 23, ../sass/layout/sections/_footer.scss */
+footer .focont .copyrights {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
 }

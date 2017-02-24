@@ -1,1 +1,28 @@
-.footer {}
+footer {
+    color: $dark5;
+    height: 125px;
+    float: left;
+    background: #fff;
+    height: 125px;
+    width: 100%;
+    float: left;
+
+    .focont {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        .socials {
+            @include font-size(24px);
+        }
+
+        .copyrights {
+            @include font-size(20px);
+            font-weight: 300;
+        }
+    }
+}
