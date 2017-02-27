@@ -7,5 +7,18 @@
         font-family: $roboto;
         @include font-size(36px);
         font-weight: 100;
+        @include breakpoint($quotecollapse1) {
+            max-width: 100%;
+            padding: 100px 20px;
+            @include font-size(26px);
+        };
+        @include breakpoint($quotecollapse2) {
+          padding: 60px 20px;
+          @include font-size(22px);
+        };
+        @include breakpoint($quotecollapse3) {
+          padding: 30px 20px;
+          @include font-size(16px);
+        };
     }
 }

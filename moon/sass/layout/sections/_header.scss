@@ -21,5 +21,14 @@ header {
             padding: 0;
             margin: 0 0 100px;
         }
+    @include breakpoint($page) {
+      width: 100%;
+      margin: 0 20px;
+      p {
+        margin: 0 auto 100px;
+        text-align: center;
+      }
+    };
     }
+
 }

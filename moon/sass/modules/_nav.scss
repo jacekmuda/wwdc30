@@ -1,4 +1,4 @@
-nav {
+.navigation {
     position: fixed;
     width: 100%;
     text-align: center;
@@ -21,11 +21,11 @@ nav {
 
         li {
             float: left;
-            padding: 0px 20px;
+            padding: 0 20px;
             text-decoration: none;
             text-transform: uppercase;
             color: $dark2;
-            margin: -12px 0 0 0;
+            margin: -12px 0 0;
             letter-spacing: 0.415em;
             @include regease;
 
@@ -33,18 +33,20 @@ nav {
                 color: $hover;
                 cursor: pointer;
             }
+            @include breakpoint($nav-collapse) {
+                margin: 17px 0;
+            }
         }
 
         li.reg {
-
-                @include font-size(10px);
-
+            @include font-size(10px);
+            @include breakpoint($nav-collapse) {
+                display: none;
+            };
         }
 
         li.title {
-
-                @include font-size(24px);
-
+            @include font-size(24px);
         }
     }
 
@@ -70,14 +72,81 @@ nav {
         top: 0;
         @include regease;
     }
+    @include breakpoint($nav-collapse) {
+        flex-direction: column;
+        height: auto;
+
+    };
 }
 
-nav.sticky {
+.navigation.sticky {
     height: 55px;
+
     &::after {
         @include opacity(1);
     }
+
     ul li {
-      margin: 0;
+        margin: 0;
+    }
+    @include breakpoint($nav-collapse) {
+        height: auto;
+
+        .title {
+            margin: 17px 0;
+        }
+    }
+}
+// responsive menu
+
+.navigation {
+    .hidden {
+        visibility: hidden;
+        height: 0;
+        display: none;
+        @include breakpoint($nav-collapse) {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            float: left;
+
+            li {
+                margin: 0;
+                padding: 10px 0;
+                transition: all 0s;
+            }
+        };
+    };
+    .hidth {display: none;}
+    .switch .hidth {display: block;}
+    .switch .unhid {display: none;}
+
+    .hidden.showmenu {
+        visibility: visible;
+        height: auto;
+        display: block;
+
+        li {
+            width: 100%;
+            float: left;
+            transition: all 0s;
+            &:last-child {
+              padding-bottom: 30px;
+            }
+        }
+    }
+
+    .unhbut {
+        display: none;
+        margin: 17 0;
+        font-size: 21px;
+        @include breakpoint($nav-collapse) {
+            display: block;
+        };
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

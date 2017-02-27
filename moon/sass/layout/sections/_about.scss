@@ -42,4 +42,47 @@
             @include button;
         }
     }
+    @include breakpoint($aboutcollapse) {
+        .white-box {
+            margin: 20px;
+            padding: 0;
+            max-width: 100%;
+            width: 100%;
+
+            .wb-content {
+                padding: 20px;
+                margin: 0 auto;
+
+                h1 {
+                    margin: 25px 20px;
+                }
+            }
+        }
+    }
+    @include breakpoint($small) {
+        .white-box {
+            padding: 20px;
+            margin: 0;
+            max-width: 100%;
+
+            .wb-content {
+                padding: 10px;
+                margin: 0;
+                max-width: 100%;
+
+                h1 {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 22px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    };
 }

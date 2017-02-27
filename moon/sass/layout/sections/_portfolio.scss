@@ -17,7 +17,6 @@
             align-items: center;
 
             a {
-                width: 100%;
                 color: white;
                 z-index: 2;
                 text-align: center;
@@ -71,6 +70,26 @@
                 right: 0;
                 @include regease;
             }
+            @include breakpoint($portfoliocollapse1) {
+                width: 50%;
+            };
+            @include breakpoint($portfoliocollapse2) {
+                height: 320px;
+            };
+            @include breakpoint($portfoliocollapse3) {
+                height: 220px;
+            };
+            @include breakpoint($portfoliocollapse4) {
+                height: 420px;
+                width: 100%;
+            };
+            @include breakpoint($portfoliocollapse4) {
+                height: 220px;
+                width: 100%;
+                a {
+                  @include font-size(20px);
+                }
+            };
         }
 
         .item1 div:before {
