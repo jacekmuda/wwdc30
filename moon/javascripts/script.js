@@ -9,11 +9,13 @@ if ($(this).scrollTop() > 1){
 
 $(window).ready(function() {
 $('.unhid').on('click', function(e) {
-    $('.hidden').toggleClass("showmenu");
+    $('.hidden').addClass("showmenu");
+    $('.unhbut').addClass("switch");
     e.preventDefault();
   });
-  $('.mobile > .reg').on('click', function(e) {
-      $('.hidden').toggleClass("showmenu");
+$('.hidth').on('click', function(e) {
+      $('.hidden').removeClass("showmenu");
+      $('.unhbut').removeClass("switch");
       e.preventDefault();
     });
  });
@@ -64,3 +66,45 @@ var anch_ease = Power3.easeIn;
     anch_contact_mob[0].onclick = function() {
       TweenLite.to(window, 1, {scrollTo:{y:".contact", offsetY: anch_offset, ease: anch_ease}});
     }};
+
+$(window).ready(function() {
+    var setScrollMagic = function(selector, controller, pxup, tr, delay, offset) {
+      var scene = null;
+      var effectsDuration = 2;
+      if (!isNaN(offset)) {
+        offset = 0;
+      }
+
+      if (!isNaN(delay)) {
+        scene = new ScrollMagic.Scene({triggerElement: selector, offset: offset})
+          .setTween(selector, 0, {  opacity:0, y: pxup, })
+          .setTween(selector, effectsDuration, {  opacity:1, y: 0, delay: delay })
+          .addTo(controller);
+      }
+      else {
+        scene = new ScrollMagic.Scene({triggerElement: selector, offset: offset})
+          .setTween(selector, 0, {  opacity:0, y: pxup, })
+          .setTween(selector, effectsDuration, {  opacity:1, y: 0 })
+          .addTo(controller);
+      }
+      scene.triggerHook(tr);
+    };
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 'onEnter',
+        duration: 0,
+      }
+    });
+    var pxup = "0";
+    var tr = "0.8";
+    var delays = "0.2";
+    setScrollMagic(".about",  controller, pxup, tr, delays, 0);
+    setScrollMagic(".portfolio", controller, pxup, tr, delays, 0);
+    setScrollMagic(".quote",  controller, pxup, tr, delays, 0);
+    setScrollMagic(".product", controller, pxup, tr, delays, 0);
+    setScrollMagic(".articles", controller, pxup, tr, delays, 0);
+    setScrollMagic(".contact", controller, pxup, tr, delays, 0);
+    setScrollMagic("footer", controller, pxup, 1, delays, 0);
+
+
+  });
