@@ -148,7 +148,7 @@
 
     .unhbut {
         display: none;
-        margin: 17 0;
+        margin: 17px 0;
         font-size: 21px;
         @include breakpoint($nav-collapse) {
             display: block;
