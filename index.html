@@ -72,10 +72,15 @@
       <div class="lp"></div>
       <div class="rp">
         <div class="rp-content">
+        <div class="propan">
         <h3>MOONSPEAK</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="propan">
         <h3>MOONSPEAK</h3>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="propan">
         <h3>MOONSPEAK</h3>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.<p>
         </div>
@@ -116,7 +121,9 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          zoom: 8,
+          draggable: true,
+          scrollwheel: false,
         });
       }
     </script>

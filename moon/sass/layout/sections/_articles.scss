@@ -8,10 +8,8 @@
 
         .panel {
             max-width: 350px;
+            width: 100%;
             background: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
 
             a,
             h3,
@@ -28,14 +26,50 @@
             p {
                 font-weight: 300;
                 margin: 0;
+                float: left;
             }
 
             a {
-                @include button;
+                float: left;
+                color: #4eaeff;
                 font-size: 0.8rem;
-                padding: 12px 33px;
+                padding: 12px 0px;
                 margin: 30px auto;
+                width: 100%;
+                text-align: center;
+                @include regease;
+                @include font-size(16px);
+                &:hover {
+                  color: $black;
+                }
             }
         }
     }
+    @include breakpoint($articlescollapse1) {
+        .pans {
+            justify-content: space-around;
+
+            .panel {
+                width: 30%;
+            }
+        }
+    };
+    @include breakpoint($articlescollapse2) {
+        .pans {
+            justify-content: space-around;
+            flex-direction: column;
+            margin: 20px auto;
+
+            .panel {
+                width: 100%;
+                max-width: 90%;
+                margin: 20px auto;
+
+                h3,
+                p {
+                    padding: 0 20px;
+                }
+            }
+        }
+    };
 }

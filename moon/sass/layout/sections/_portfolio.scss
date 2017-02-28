@@ -28,9 +28,15 @@
                 opacity: 0;
                 position: absolute;
                 @include regease;
+                left: 0;
+                right: 0;
             }
-
-            div::before {
+            div {
+              width: 100%;
+              height: 100%;
+              position: relative;
+            }
+            div:before {
                 width: 100%;
                 height: 100%;
                 content: "";
@@ -86,8 +92,9 @@
             @include breakpoint($portfoliocollapse4) {
                 height: 220px;
                 width: 100%;
+
                 a {
-                  @include font-size(20px);
+                    @include font-size(20px);
                 }
             };
         }

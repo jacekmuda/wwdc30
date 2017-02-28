@@ -13,12 +13,12 @@
             @include font-size(26px);
         };
         @include breakpoint($quotecollapse2) {
-          padding: 60px 20px;
-          @include font-size(22px);
+            padding: 60px 20px;
+            @include font-size(22px);
         };
         @include breakpoint($quotecollapse3) {
-          padding: 30px 20px;
-          @include font-size(16px);
+            padding: 30px 20px;
+            @include font-size(16px);
         };
     }
 }

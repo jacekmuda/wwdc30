@@ -57,4 +57,41 @@
             }
         }
     }
+    @include breakpoint($page) {
+        .conconten {
+            flex-direction: column;
+
+            .con {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .cl {
+                padding: 30px 0;
+
+                p {
+                    max-width: 450px;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 0 20px;
+                }
+
+                .inf {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    display: flex;
+                    text-align: center;
+                    @include breakpoint($contactcollapse1) {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .cr {
+                #map {
+                    max-height: 300px;
+                }
+            }
+        }
+    }
 }

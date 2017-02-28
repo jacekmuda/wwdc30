@@ -18,11 +18,39 @@ footer {
 
         .socials {
             @include font-size(24px);
+
         }
 
         .copyrights {
             @include font-size(20px);
             font-weight: 300;
+        }
+    }
+    .fa {
+        padding-right: 23px;
+        @include regease;
+
+        &:hover {
+            cursor: pointer;
+            color: $hover;
+        }
+    }
+    @include breakpoint($footer) {
+        .socials {
+            margin-left: 20px;
+        }
+
+        .copytights {
+            margin-right: 20px;
+        }
+    }
+    @include breakpoint($footer2) {
+        .socials {
+            .fa {
+                padding-right: 5px;
+                @include font-size(20px);
+
+            }
         }
     }
 }
