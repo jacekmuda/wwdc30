@@ -513,15 +513,20 @@ html {
 .navigation .switch .unhid {
   display: none; }
 .navigation .hidden.showmenu {
-  visibility: visible;
-  height: auto;
-  display: block; }
-  .navigation .hidden.showmenu li {
-    width: 100%;
-    float: left;
-    transition: all 0s; }
-    .navigation .hidden.showmenu li:last-child {
-      padding-bottom: 30px; }
+  visibility: hidden;
+  height: 0;
+  display: none; }
+  @media (min-width: 0) and (max-width: 770px) {
+    .navigation .hidden.showmenu {
+      visibility: visible;
+      height: auto;
+      display: block; }
+      .navigation .hidden.showmenu li {
+        width: 100%;
+        float: left;
+        transition: all 0s; }
+        .navigation .hidden.showmenu li:last-child {
+          padding-bottom: 30px; } }
 .navigation .unhbut {
   display: none;
   margin: 17px 0;

@@ -131,17 +131,22 @@
     }
 
     .hidden.showmenu {
-        visibility: visible;
-        height: auto;
-        display: block;
+        visibility: hidden;
+        height: 0;
+        display: none;
+        @include breakpoint($nav-collapse) {
+            visibility: visible;
+            height: auto;
+            display: block;
 
-        li {
-            width: 100%;
-            float: left;
-            transition: all 0s;
+            li {
+                width: 100%;
+                float: left;
+                transition: all 0s;
 
-            &:last-child {
-                padding-bottom: 30px;
+                &:last-child {
+                    padding-bottom: 30px;
+                }
             }
         }
     }
